@@ -1,14 +1,14 @@
 {% set name = "plumpy" %}
-{% set version = "0.7.9"%}
-{% set sha256 = "a14c20c61c086414895142d22d4ba9b4a5267a743dddfff860d947a5126fdb79" %}
+{% set version = "0.7.10"%}
+{% set sha256 = "8c64cdb529dadd48424a6111fc7329359da833cc7a903e22498cd412414b8591" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}-fixed.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}-fixed.tar.gz
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:

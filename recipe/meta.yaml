@@ -36,9 +36,6 @@ test:
   imports:
     - plumpy
 
-  commands:
-    - python -m unittest discover
-
   source_files:
     - test
 

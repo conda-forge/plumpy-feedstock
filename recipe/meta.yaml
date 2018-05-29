@@ -30,7 +30,7 @@ requirements:
     - future
     - kiwipy[rmq]>=0.2.0
     - enum34  # [py < 34]
-    - backports.tempfile # [py < 32]
+    - backports.tempfile  # [py < 32]
 
 test:
   imports:

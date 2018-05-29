@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.7.10"%}
-{% set sha256 = "8c64cdb529dadd48424a6111fc7329359da833cc7a903e22498cd412414b8591" %}
+{% set version = "0.10.2" %}
+{% set sha256 = "559e15fe11ee0d3beed9fe1910b4f7c13a711fb72e62346580341c3c1369dd8e" %}
 
 package:
   name: {{ name|lower }}
@@ -24,12 +24,17 @@ requirements:
   run:
     - python
     - frozendict
+    - portalocker
+    - pyyaml
+    - tornado
+    - future
+    - kiwipy[rmq]>=0.2.0
     - enum34  # [py < 34]
-    - futures  # [py < 32]
+    - backports.tempfile # [py < 32]
 
 test:
   imports:
-    - plum
+    - plumpy
 
   commands:
     - python -m unittest discover

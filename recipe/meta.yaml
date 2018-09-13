@@ -17,12 +17,12 @@ build:
   skip: True  # [not py27]
 
 requirements:
-  host:
-    - pip
-
   build:
     - setuptools
     - python
+
+  host:
+    - pip
 
   run:
     - python

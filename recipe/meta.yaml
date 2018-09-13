@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.10.6" %}
-{% set sha256 = "0746734b12f4a706f57ba9104225eb7dc5f2a1c4b68a70264497e58b59a26a34" %}
+{% set version = "0.7.12" %}
+{% set sha256 = "d679e97016b8037e1405e3c12bfd9208131326cc69cdf7781c99ab905961793b" %}
 
 package:
   name: {{ name|lower }}
@@ -24,11 +24,6 @@ requirements:
   run:
     - python
     - frozendict
-    - portalocker
-    - pyyaml
-    - tornado
-    - future
-    - kiwipy[rmq]>=0.2.0
     - enum34  # [py < 34]
     - backports.tempfile  # [py < 32]
 

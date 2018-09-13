@@ -13,17 +13,13 @@ source:
 
 build:
   number: 0
-  script: "python -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   skip: True  # [not py27]
 
 requirements:
-  build:
-    - pip
-    - python
-
   host:
+    - python
     - pip
-
   run:
     - python
     - frozendict
@@ -33,7 +29,6 @@ requirements:
 test:
   imports:
     - plumpy
-
   source_files:
     - test
 

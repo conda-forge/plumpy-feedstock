@@ -17,6 +17,9 @@ build:
   skip: True  # [not py27]
 
 requirements:
+  build:
+    - python
+    - pip
   host:
     - python
     - pip

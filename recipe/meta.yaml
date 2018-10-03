@@ -31,7 +31,7 @@ requirements:
 
 test:
   imports:
-    - plum
+    - plumpy
   source_files:
     - test
 

@@ -1,7 +1,7 @@
 About plumpy
 ============
 
-Home: https://github.com/aiidateam/plumpy
+Home: https://github.com/muhrin/plumpy
 
 Package license: GPLv3, MIT
 

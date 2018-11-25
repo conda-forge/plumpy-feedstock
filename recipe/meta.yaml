@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.7.12" %}
-{% set sha256 = "d679e97016b8037e1405e3c12bfd9208131326cc69cdf7781c99ab905961793b" %}
+{% set version = "0.11.0" %}
+{% set sha256 = "fa0371d547b9703f68bac7e0ce288884794dfc56d1bf3d07f663b3d784febbb9" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 1000
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
-  skip: True  # [not py27]
+  skip: True  # [not (py27 or py34 or py35 or py36)]
 
 requirements:
   build:
@@ -26,12 +26,17 @@ requirements:
   run:
     - python
     - frozendict
+    - portalocker
+    - pyyaml
+    - tornado>=4.1, <5.0
+    - future
+    - kiwipy[rmq]>=0.3.1, <0.4.0
     - enum34  # [py < 34]
     - backports.tempfile  # [py < 32]
 
 test:
   imports:
-    - plum
+    - plumpy
   source_files:
     - test
 

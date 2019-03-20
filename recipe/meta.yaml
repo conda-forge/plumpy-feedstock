@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.12.2" %}
-{% set sha256 = "d7e7ef533198ab46826d88fe9dca3dfb97a3ae19ec942a3a547e5b6d7bf822aa" %}
+{% set version = "0.13.0" %}
+{% set sha256 = "2ac0cecf70fe75636ba730e7cff5fefaa24554ce09c371ea0b89f4921000c769" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   skip: True  # [not (py27 or py34 or py35 or py36)]
 

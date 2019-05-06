@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
-  skip: True  # [not (py27 or py34 or py35 or py36)]
+  skip: True  # [not (py27 or py34 or py35 or py36 or py37)]
 
 requirements:
   build:
@@ -50,3 +50,4 @@ extra:
   recipe-maintainers:
     - ltalirz
     - muhrin
+    - sphuber

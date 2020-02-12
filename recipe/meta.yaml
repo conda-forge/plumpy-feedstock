@@ -12,9 +12,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
-  skip: True  # [not (py27 or py34 or py35 or py36 or py37)]
+  skip: True  # [not (py == 27 or py >= 34)]
 
 requirements:
   build:

@@ -12,13 +12,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
-    - python
-    - pip
   host:
     - python
     - pip

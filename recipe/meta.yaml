@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.16.0" %}
-{% set sha256 = "a62bb5db84095a53ea09cee30d06db484260595f7764eef7f29b47bff3131bff" %}
+{% set version = "0.16.1" %}
+{% set sha256 = "1a950bf54e9af8a552f442c650f6b1e0ab6147265d0321bd98c754964d6c6889" %}
 
 package:
   name: {{ name|lower }}

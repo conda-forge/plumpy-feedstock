@@ -120,4 +120,5 @@ Feedstock Maintainers
 * [@ltalirz](https://github.com/ltalirz/)
 * [@muhrin](https://github.com/muhrin/)
 * [@sphuber](https://github.com/sphuber/)
+* [@unkcpz](https://github.com/unkcpz/)
 

@@ -5,7 +5,7 @@ Home: https://github.com/aiidateam/plumpy
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A python workflow library that supports multithreading, and RabbitMQ as a message broker for starting/stopping/monitoring tasks.
 
@@ -120,4 +120,5 @@ Feedstock Maintainers
 * [@ltalirz](https://github.com/ltalirz/)
 * [@muhrin](https://github.com/muhrin/)
 * [@sphuber](https://github.com/sphuber/)
+* [@unkcpz](https://github.com/unkcpz/)
 

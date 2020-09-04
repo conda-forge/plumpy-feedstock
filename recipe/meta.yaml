@@ -24,9 +24,9 @@ requirements:
     - python
     - frozendict ~=1.2
     - pyyaml ~=5.1.2
-    - nest_asyncio ~=1.4.0
+    - nest-asyncio ~=1.4.0
     - aio-pika ~=6.6.1
-    - aio-contextvars ~=0.2.2
+    - aiocontextvars ~=0.2.2
     - kiwipy[rmq] ~=0.6.0
 
 test:

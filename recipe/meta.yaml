@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.17.0" %}
-{% set sha256 = "ac37a6f1fdcd5a552a9d5835bbfe7aeb2a987e1e4e75527e971f49e221b476ca" %}
+{% set version = "0.17.1" %}
+{% set sha256 = "1db69c9cefb49bb58b18de9d7b775440c543279968f007e4a25a982718689d08" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,6 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
@@ -21,10 +20,10 @@ requirements:
     - python
     - pip
   run:
-    - python >=3.5
+    - python
     - frozendict ~=1.2
     - aio-pika ~=6.6
-    - aiocontextvars ~=0.2.2
+    - aiocontextvars ~=0.2.2  # [py < 37]
     - pyyaml ~=5.1.2
     - nest-asyncio ~=1.4.0
     - kiwipy[rmq] ~=0.6.0

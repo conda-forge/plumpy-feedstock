@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.18.1" %}
-{% set sha256 = "a7429ef38e6b4b11d415c1c59f17925f37c618173378842b6d64d4c5e2abdbae" %}
+{% set version = "0.18.4" %}
+{% set sha256 = "c02b11915d505825a7ffa83106a3892aeebeb71ffef757ee6158901eab8a0076" %}
 
 package:
   name: {{ name|lower }}
@@ -31,8 +31,7 @@ requirements:
 test:
   imports:
     - plumpy
-  source_files:
-    - test
+    - plumpy.base
 
 about:
   home: https://github.com/aiidateam/plumpy

@@ -31,8 +31,6 @@ requirements:
 test:
   imports:
     - plumpy
-  source_files:
-    - test
 
 about:
   home: https://github.com/aiidateam/plumpy

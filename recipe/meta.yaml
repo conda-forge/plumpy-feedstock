@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.18.4" %}
-{% set sha256 = "c02b11915d505825a7ffa83106a3892aeebeb71ffef757ee6158901eab8a0076" %}
+{% set version = "0.18.5" %}
+{% set sha256 = "a17ad6e00b06d9c54ee76e1267fb51f49a5fd8148fd5ce524b735803527153c0" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +21,6 @@ requirements:
     - pip
   run:
     - python
-    - frozendict ~=1.2
     - aio-pika ~=6.6
     - aiocontextvars ~=0.2.2  # [py < 37]
     - pyyaml ~=5.1.2

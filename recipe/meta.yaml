@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.18.4" %}
-{% set sha256 = "c02b11915d505825a7ffa83106a3892aeebeb71ffef757ee6158901eab8a0076" %}
+{% set version = "0.19.0" %}
+{% set sha256 = "743f5d503c0f5b4e4f3fd37ea2aa926d589adff8aa9dfcb3c83e46b5bb5ae225" %}
 
 package:
   name: {{ name|lower }}
@@ -21,12 +21,11 @@ requirements:
     - pip
   run:
     - python
-    - frozendict ~=1.2
     - aio-pika ~=6.6
     - aiocontextvars ~=0.2.2  # [py < 37]
     - pyyaml ~=5.1.2
     - nest-asyncio ~=1.4.0
-    - kiwipy[rmq] ~=0.7.1
+    - kiwipy[rmq] ~=0.7.4
 
 test:
   imports:

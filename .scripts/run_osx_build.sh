@@ -49,7 +49,6 @@ source run_conda_forge_build_setup
 
 ( endgroup "Configuring conda" ) 2> /dev/null
 
-
 echo -e "\n\nMaking the build clobber file"
 make_build_number ./ ./recipe ./.ci_support/${CONFIG}.yaml
 
@@ -57,6 +56,7 @@ conda $BUILD_CMD ./recipe -m ./.ci_support/${CONFIG}.yaml --suppress-variables -
 ( startgroup "Validating outputs" ) 2> /dev/null
 
 validate_recipe_outputs "${FEEDSTOCK_NAME}"
+endgroup "Validating outputs"
 
 ( endgroup "Validating outputs" ) 2> /dev/null
 

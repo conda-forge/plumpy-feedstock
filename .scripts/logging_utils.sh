@@ -20,9 +20,11 @@ function startgroup {
     esac
 } 2> /dev/null
 
+
 function endgroup {
     # End a foldable group of log lines
     # Pass a single argument, quoted
+
 
     case ${CI:-} in
         azure )

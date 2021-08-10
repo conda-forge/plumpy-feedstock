@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.19.0" %}
-{% set sha256 = "743f5d503c0f5b4e4f3fd37ea2aa926d589adff8aa9dfcb3c83e46b5bb5ae225" %}
+{% set version = "0.20.0" %}
+{% set sha256 = "199183ecf3dfe60fd43ef1cf62542cc4f5ba1b95ebd8a28a5a3a61ae77ff7813" %}
 
 package:
   name: {{ name|lower }}
@@ -23,7 +23,7 @@ requirements:
     - python
     - aio-pika ~=6.6
     - aiocontextvars ~=0.2.2  # [py < 37]
-    - pyyaml ~=5.1.2
+    - pyyaml ~=5.4
     - nest-asyncio ~=1.4.0
     - kiwipy[rmq] ~=0.7.4
 

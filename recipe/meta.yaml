@@ -19,6 +19,7 @@ requirements:
   host:
     - python
     - pip
+    - flit-core >=3.4,<4
   run:
     - python
     - aio-pika ~=6.6

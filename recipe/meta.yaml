@@ -34,8 +34,8 @@ test:
 
 about:
   home: https://github.com/aiidateam/plumpy
-  license: MIT
-  license_file: LICENSE
+  license: MIT AND GPLv3
+  license_file: LICENSE.txt
   summary: A python workflow library that supports multithreading, and RabbitMQ as a message broker for starting/stopping/monitoring tasks.
   dev_url: https://github.com/aiidateam/plumpy
 

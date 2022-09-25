@@ -12,16 +12,17 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  noarch: python
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python
+    - python >=3.7
     - pip
     - flit-core >=3.4,<4
   run:
-    - python
+    - python >=3.7
     - aio-pika ~=6.6
     - pyyaml ~=5.4
     - nest-asyncio ~=1.5

@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.21.0" %}
-{% set sha256 = "6339cba3f2c8af8fa7f903d99d3eb5c8cfb3721f7fd6dd5b10ea439d8cd6d906" %}
+{% set version = "0.22.0" %}
+{% set sha256 = "bd1643abb0cbd06c8af9452c9f3d848b3f4abaf010545d8723a3a0a8dc9c0ca6" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -23,10 +23,9 @@ requirements:
     - flit-core >=3.4,<4
   run:
     - python >=3.7
-    - aio-pika ~=6.6
     - pyyaml ~=5.4
     - nest-asyncio ~=1.5
-    - kiwipy[rmq] ~=0.7.4
+    - kiwipy[rmq] ~=0.8.2
 
 test:
   imports:

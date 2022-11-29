@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.21.1" %}
-{% set sha256 = "92248619d3e822dc6f140fdeda555a69c59d95ed52454892578fbb18df05026c" %}
+{% set version = "0.21.2" %}
+{% set sha256 = "261dc26fe9bd995ba4e0675875223e23f924282a665ac37a7f76336bcf40c782" %}
 
 package:
   name: {{ name|lower }}
@@ -23,10 +23,10 @@ requirements:
     - flit-core >=3.4,<4
   run:
     - python >=3.7
-    - pyyaml ~=5.4
+    - pyyaml ~=6.0
     - aio-pika ~=6.6
     - nest-asyncio ~=1.5
-    - kiwipy[rmq] ~=0.7.4
+    - kiwipy[rmq] ~=0.7.7
 
 test:
   imports:

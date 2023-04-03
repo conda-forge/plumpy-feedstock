@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.21.4" %}
-{% set sha256 = "adaf5055bdd0f61198c05b2493c3c27c1950fb05deb39781be0fda26e145fbad" %}
+{% set version = "0.21.5" %}
+{% set sha256 = "fd2993c06fd334f7f59effc96d21b590f7bafd6a589f427fdbab2cccf783eb7b" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:

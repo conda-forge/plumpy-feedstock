@@ -1,11 +1,11 @@
-About plumpy
-============
+About plumpy-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plumpy-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/aiidateam/plumpy
 
 Package license: MIT AND GPLv3
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plumpy-feedstock/blob/main/LICENSE.txt)
 
 Summary: A python workflow library that supports multithreading, and RabbitMQ as a message broker for starting/stopping/monitoring tasks.
 

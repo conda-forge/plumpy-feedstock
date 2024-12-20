@@ -146,6 +146,7 @@ Feedstock Maintainers
 =====================
 
 * [@chrisjsewell](https://github.com/chrisjsewell/)
+* [@khsrali](https://github.com/khsrali/)
 * [@ltalirz](https://github.com/ltalirz/)
 * [@muhrin](https://github.com/muhrin/)
 * [@sphuber](https://github.com/sphuber/)

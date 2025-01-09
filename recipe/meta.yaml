@@ -13,21 +13,23 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - flit-core >=3.4,<4
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pyyaml ~=6.0
     - nest-asyncio ~=1.5,>=1.5.1
     - kiwipy[rmq] ~=0.8.3
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - plumpy
     - plumpy.base

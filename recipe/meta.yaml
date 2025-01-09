@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.23.0" %}
-{% set sha256 = "ec3cf7d16edcb377eba89f1a6aca9eeed534d5d639eaa5d6e40772d50872b5c8" %}
+{% set version = "0.24.0" %}
+{% set sha256 = "c17c8efbd124d7f5ec2f27cb1f2c3de7901143e61551ce81f3ee22bf7e2ed42d" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:

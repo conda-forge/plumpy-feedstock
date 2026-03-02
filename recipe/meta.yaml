@@ -1,6 +1,8 @@
 {% set name = "plumpy" %}
 {% set version = "0.26.0" %}
 {% set sha256 = "5d0bb443c3983f43295be5306aec97d09e8005a27d1d645deacf08da84afb6e1" %}
+# Set package metainfo
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +15,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -37,7 +39,7 @@ test:
 
 about:
   home: https://github.com/aiidateam/plumpy
-  license: MIT AND GPLv3
+  license: MIT AND GPL-3.0-only
   license_file: LICENSE.txt
   summary: A python workflow library that supports multithreading, and RabbitMQ as a message broker for starting/stopping/monitoring tasks.
   dev_url: https://github.com/aiidateam/plumpy

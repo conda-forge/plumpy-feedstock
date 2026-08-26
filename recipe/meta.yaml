@@ -1,6 +1,6 @@
 {% set name = "plumpy" %}
-{% set version = "0.26.0" %}
-{% set sha256 = "5d0bb443c3983f43295be5306aec97d09e8005a27d1d645deacf08da84afb6e1" %}
+{% set version = "0.26.1" %}
+{% set sha256 = "d4f301eed5c67afe0e49af31b27a8c44b6b35c49d5b4b4790992b580ce245424" %}
 # Set package metainfo
 {% set python_min = "3.9" %}
 
@@ -10,12 +10,12 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:

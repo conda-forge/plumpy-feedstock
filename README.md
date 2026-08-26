@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plumpy-feedstoc
 
 Home: https://github.com/aiidateam/plumpy
 
-Package license: MIT AND GPLv3
+Package license: MIT AND GPL-3.0-only
 
 Summary: A python workflow library that supports multithreading, and RabbitMQ as a message broker for starting/stopping/monitoring tasks.
 
@@ -15,10 +15,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=791&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/plumpy-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/plumpy-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/plumpy-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -41,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `plumpy` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install plumpy
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install plumpy
 ```
 
-It is possible to list all of the versions of `plumpy` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add plumpy
+# for installing globally
+pixi global install plumpy
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `plumpy` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search plumpy --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search plumpy --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search plumpy --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -77,6 +120,8 @@ mamba repoquery whoneeds plumpy --channel conda-forge
 # List dependencies of `plumpy`:
 mamba repoquery depends plumpy --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -145,10 +190,10 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@chrisjsewell](https://github.com/chrisjsewell/)
+* [@GeigerJ2](https://github.com/GeigerJ2/)
+* [@agoscinski](https://github.com/agoscinski/)
+* [@danielhollas](https://github.com/danielhollas/)
+* [@edan-bainglass](https://github.com/edan-bainglass/)
+* [@giovannipizzi](https://github.com/giovannipizzi/)
 * [@khsrali](https://github.com/khsrali/)
-* [@ltalirz](https://github.com/ltalirz/)
-* [@muhrin](https://github.com/muhrin/)
-* [@sphuber](https://github.com/sphuber/)
-* [@unkcpz](https://github.com/unkcpz/)
 
